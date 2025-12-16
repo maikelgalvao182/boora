@@ -18,7 +18,7 @@ export default async function PrivacyPolicyPage() {
       <main className="max-w-4xl mx-auto p-5 pt-10 pb-20">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-600 mb-6 text-sm font-medium"
+          className="inline-flex items-center gap-2 text-[#3CA795] hover:text-[#7BCEC0] mb-6 text-sm font-medium"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to App

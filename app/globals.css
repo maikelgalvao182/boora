@@ -91,6 +91,6 @@ body {
   }
 
   .prose a {
-    @apply text-blue-500 hover:text-blue-600 underline;
+    @apply text-[#3CA795] hover:text-[#7BCEC0] underline;
   }
 }

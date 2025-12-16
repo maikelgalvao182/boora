@@ -134,13 +134,13 @@ export default function Home() {
           <div className="flex items-center gap-3 mt-4">
             <button 
               onClick={() => window.open(appData.app.liveAppLink, '_blank')}
-              className="bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white font-bold rounded-full px-6 py-2 text-sm transition-colors"
+              className="bg-[#3CA795] hover:bg-[#7BCEC0] active:bg-[#6BBDAE] text-white font-bold rounded-full px-6 py-2 text-sm transition-colors"
             >
               {appData.app.buttonText}
             </button>
             <button
               onClick={handleShareClick}
-              className="relative border-2 border-blue-500 hover:border-blue-600 active:border-blue-700 text-blue-500 hover:text-blue-600 active:text-blue-700 font-bold rounded-full px-6 py-2 text-sm transition-colors flex items-center gap-2"
+              className="relative border-2 border-[#3CA795] hover:border-[#7BCEC0] active:border-[#6BBDAE] text-[#3CA795] hover:text-[#7BCEC0] active:text-[#6BBDAE] font-bold rounded-full px-6 py-2 text-sm transition-colors flex items-center gap-2"
               aria-label="Compartilhar"
             >
               <Share2 className="w-4 h-4" />
@@ -200,7 +200,7 @@ export default function Home() {
             <h2 className="text-lg font-bold tracking-tight">
               Avaliações e Comentários
             </h2>
-            <button className="text-blue-500 text-xs font-medium">
+            <button className="text-[#3CA795] text-xs font-medium">
               Ver Tudo
             </button>
           </div>
@@ -289,7 +289,7 @@ export default function Home() {
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500/80 text-sm font-medium flex items-center gap-1"
+            className="text-[#3CA795]/80 text-sm font-medium flex items-center gap-1"
           >
             Instagram
             <ArrowRight className="w-4 h-4 -rotate-45" />
@@ -298,21 +298,21 @@ export default function Home() {
             href="https://tiktok.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500/80 text-sm font-medium flex items-center gap-1"
+            className="text-[#3CA795]/80 text-sm font-medium flex items-center gap-1"
           >
             TikTok
             <ArrowRight className="w-4 h-4 -rotate-45" />
           </Link>
           <Link
-            href="/privacy-policy"
-            className="text-blue-500/80 text-sm font-medium flex items-center gap-1"
+            href="/politica-de-privacidade"
+            className="text-[#3CA795]/80 text-sm font-medium flex items-center gap-1"
           >
             Política de Privacidade
             <ArrowRight className="w-4 h-4 -rotate-45" />
           </Link>
           <Link
-            href="/terms-of-service"
-            className="text-blue-500/80 text-sm font-medium flex items-center gap-1"
+            href="/termos-de-servico"
+            className="text-[#3CA795]/80 text-sm font-medium flex items-center gap-1"
           >
             Termos de Serviço
             <ArrowRight className="w-4 h-4 -rotate-45" />
