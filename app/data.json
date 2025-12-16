@@ -1,0 +1,97 @@
+{
+  "app": {
+    "icon": "/logo.png",
+    "name": "Sem companhia pra sair e explorar a cidade?",
+    "ageRating": "9+",
+    "developer": "Crie atividades no mapa — correr no parque, cinema, tomar vinho. Veja quem topa ir junto e faça novos amigos.",
+    "priceType": "",
+    "overallRating": 5.0,
+    "totalRatings": 6900,
+    "buttonText": "Baixar Agora",
+    "liveAppLink": "https://apps.apple.com/us/app/subwise-subscription-tracker/id6754798552"
+  },
+  "screenshots": ["/1.png", "/2.png", "/3.png", "/4.png", "/5.png"],
+  "description": "Trombar é um social map feito pra quem tá cansado de ficar em casa esperando convite ou rolê perfeito aparecer.\n\nAqui você cria suas próprias atividades no mapa — desde correr no parque, tomar um café, jogar bola, até assistir aquele filme que tá bombando. Publica no mapa e vê quem mais tá na vibe de ir junto.\n\nNada de match forçado, é tudo espontâneo, real e perto de você.\n\nO lance é simples: quer sair e fazer algo? Joga no mapa. Viu alguém fazendo algo legal? Entra junto. Conheça gente nova de verdade, sem aquela vibe estranha de app de namoro.\n\nTrombar é pra quem quer explorar a cidade, fazer amizades reais e descobrir que tem muita gente legal por perto — só faltava um jeito fácil de se conectar.\n\nBaixa aí e trombe.",
+  "whatsNew": {
+    "version": "1.0.0",
+    "content": "Primeira versão do Trombar! Crie atividades no mapa, encontre pessoas perto de você e faça novos amigos. Recursos incluem: criar e participar de atividades, chat em tempo real, notificações de atividades próximas e muito mais."
+  },
+  "ratings": {
+    "overall": 4.5,
+    "totalRatings": 6900,
+    "distribution": {
+      "5": 90,
+      "4": 15,
+      "3": 5,
+      "2": 0,
+      "1": 0
+    }
+  },
+  "reviews": [
+    {
+      "title": "Melhor app pra fazer amigos!",
+      "user": "CarlosSilva23",
+      "date": "10/12/2025",
+      "rating": 5,
+      "content": "Acabei de me mudar pra São Paulo e não conhecia ninguém. Com o Trombar já fiz vários amigos correndo no Ibirapuera. Super recomendo!"
+    },
+    {
+      "title": "Encontros reais, sem enrolação",
+      "user": "JulianaMartins",
+      "date": "05/12/2025",
+      "rating": 5,
+      "content": "Cansada de apps de relacionamento cheios de match que não dão em nada. Aqui é diferente, as pessoas realmente querem sair e fazer atividades juntas. Já fui ao cinema, tomar café e fazer trilha com pessoas incríveis!"
+    },
+    {
+      "title": "Simples e funciona!",
+      "user": "PedroOliveira_",
+      "date": "12/12/2025",
+      "rating": 5,
+      "content": "App é bem simples de usar. Coloquei que queria jogar futebol e em 20 min já tinha gente confirmando. Jogamos e depois fomos tomar uma cerveja. Muito bom!"
+    },
+    {
+      "title": "Perfeito para conhecer a cidade",
+      "user": "AnaLuiza_RJ",
+      "date": "14/12/2025",
+      "rating": 5,
+      "content": "Mudei pro Rio há 3 meses e estava difícil fazer amizades. Pelo Trombar conheci um pessoal incrível pra ir na praia e fazer caminhada. Melhor app!"
+    },
+    {
+      "title": "Finalmente um app que funciona",
+      "user": "ThiagoMendes",
+      "date": "13/12/2025",
+      "rating": 5,
+      "content": "Testei vários apps pra fazer amigos e esse foi o único que realmente funcionou. Já participei de várias atividades e conheci gente muito legal. Vale muito a pena baixar!"
+    },
+    {
+      "title": "Ótimo pra sair da rotina",
+      "user": "BeatrizCosta",
+      "date": "11/12/2025",
+      "rating": 5,
+      "content": "Trabalho home office e tava ficando louca em casa. Com o Trombar comecei a sair mais, fazer yoga no parque, ir em exposições. Salvou minha rotina!"
+    },
+    {
+      "title": "Conexões verdadeiras",
+      "user": "RafaelSantos92",
+      "date": "09/12/2025",
+      "rating": 5,
+      "content": "Diferente de outros apps onde você só conversa e nunca sai nada, aqui as pessoas realmente topam se encontrar. Já fiz amizades que vou levar pra vida!"
+    },
+    {
+      "title": "Excelente para quem é novo na cidade",
+      "user": "CamilaRocha",
+      "date": "08/12/2025",
+      "rating": 5,
+      "content": "Me mudei de Recife pra BH e não conhecia ninguém. Pelo Trombar consegui um grupo fixo pra jogar vôlei toda semana. Recomendo demais!"
+    },
+    {
+      "title": "Melhor descoberta do ano",
+      "user": "LucasAlmeida_",
+      "date": "07/12/2025",
+      "rating": 5,
+      "content": "Baixei sem muita expectativa mas me surpreendi. Já fui em bares, shows, trilhas... Conheci gente incrível e diversificada. App top demais!"
+    }
+  ],
+  "information": {}
+}
+}
