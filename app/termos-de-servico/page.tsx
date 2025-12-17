@@ -1,4 +1,6 @@
 import { readFile } from "fs/promises";
+"use client";
+
 import { ArrowLeft } from "lucide-react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
@@ -23,7 +25,7 @@ export default async function TermsOfServicePage() {
       <main className="max-w-4xl mx-auto p-5 pt-10 pb-20">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-[#3CA795] hover:text-[#7BCEC0] mb-6 text-sm font-medium"
+          className="inline-flex items-center gap-2 text-[#5BAD46] hover:text-[#7BCEC0] mb-6 text-sm font-medium"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to App
