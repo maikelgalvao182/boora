@@ -1,5 +1,3 @@
-"use client";
-
 import { readFile } from "fs/promises";
 
 import { ArrowLeft } from "lucide-react";
