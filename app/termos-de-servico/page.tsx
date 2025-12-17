@@ -1,5 +1,6 @@
-import { readFile } from "fs/promises";
 "use client";
+
+import { readFile } from "fs/promises";
 
 import { ArrowLeft } from "lucide-react";
 import { MDXRemote } from "next-mdx-remote/rsc";
