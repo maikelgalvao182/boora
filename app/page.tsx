@@ -138,23 +138,6 @@ export default function Home() {
             >
               {appData.app.buttonText}
             </button>
-            <button
-              onClick={handleShareClick}
-              className="relative border-2 border-[#5BAD46] hover:border-[#7BCEC0] active:border-[#6BBDAE] text-[#5BAD46] hover:text-[#7BCEC0] active:text-[#6BBDAE] font-bold rounded-full px-6 py-2 text-sm transition-colors flex items-center gap-2"
-              aria-label="Compartilhar"
-            >
-              <Share2 className="w-4 h-4" />
-              Compartilhar
-              {showCopied && (
-                <span
-                  className="absolute -top-10 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded whitespace-nowrap pointer-events-none z-10"
-                  role="tooltip"
-                  aria-live="polite"
-                >
-                  Copiado
-                </span>
-              )}
-            </button>
           </div>
         </section>
 
