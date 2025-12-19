@@ -116,15 +116,6 @@ export default function Home() {
             height={90}
             className="pb-6"
           />
-          <div className="flex items-center gap-1 mb-4">
-            <StarRating rating={appData.app.overallRating} />
-            <span className="text-xs text-gray-400">
-              {appData.app.totalRatings >= 1000
-                ? `${(appData.app.totalRatings / 1000).toFixed(1)}K`
-                : appData.app.totalRatings}{" "}
-              Avaliações
-            </span>
-          </div>
           <h1 className="text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-4 md:max-w-lg mx-auto">
             {appData.app.name}
           </h1>
@@ -133,7 +124,7 @@ export default function Home() {
           </p>
           <div className="flex items-center gap-3 mt-4">
             <button 
-              onClick={() => window.open(appData.app.liveAppLink, '_blank')}
+              onClick={() => window.open('https://apps.apple.com/br/app/boora/id6755944656', '_blank')}
               className="bg-[#5BAD46] hover:bg-[#7BCEC0] active:bg-[#6BBDAE] text-white font-bold rounded-full px-6 py-2 text-sm transition-colors"
             >
               {appData.app.buttonText}
@@ -183,7 +174,10 @@ export default function Home() {
             <h2 className="text-lg font-bold tracking-tight">
               Avaliações e Comentários
             </h2>
-            <button className="text-[#5BAD46] text-xs font-medium">
+            <button 
+              onClick={() => window.open('https://apps.apple.com/br/app/boora/id6755944656', '_blank')}
+              className="text-[#5BAD46] text-xs font-medium"
+            >
               Ver Tudo
             </button>
           </div>
