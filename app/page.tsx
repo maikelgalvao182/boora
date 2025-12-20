@@ -263,7 +263,7 @@ export default function Home() {
 
         <div className="grid grid-cols-3 sm:flex sm:items-center sm:justify-center gap-3 sm:gap-5">
           <Link
-            href="https://instagram.com"
+            href="https://instagram.com/boora_app"
             target="_blank"
             rel="noopener noreferrer"
             className="text-black text-xs sm:text-sm font-medium"
@@ -271,7 +271,7 @@ export default function Home() {
             Instagram
           </Link>
           <Link
-            href="https://tiktok.com"
+            href="https://tiktok.com/@boora.app"
             target="_blank"
             rel="noopener noreferrer"
             className="text-black text-xs sm:text-sm font-medium"
