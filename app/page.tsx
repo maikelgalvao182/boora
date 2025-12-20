@@ -144,7 +144,7 @@ export default function Home() {
             {appData.screenshots.map((screenshot, i) => (
               <div
                 key={i}
-                className="shrink-0 w-[240px] h-[520px] rounded-[32px] overflow-hidden border border-gray-100 shadow-sm relative bg-gray-100 snap-center"
+                className="shrink-0 w-[240px] h-[520px] rounded-[32px] overflow-hidden border border-gray-100 relative bg-gray-100 snap-center"
               >
                 <Image
                   src={screenshot}
@@ -261,52 +261,46 @@ export default function Home() {
 
         <hr className="border-gray-200 mb-6" />
 
-        <div className="flex items-center justify-center gap-5">
+        <div className="grid grid-cols-3 sm:flex sm:items-center sm:justify-center gap-3 sm:gap-5">
           <Link
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#5BAD46]/80 text-sm font-medium flex items-center gap-1"
+            className="text-black text-xs sm:text-sm font-medium"
           >
             Instagram
-            <ArrowRight className="w-4 h-4 -rotate-45" />
           </Link>
           <Link
             href="https://tiktok.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#5BAD46]/80 text-sm font-medium flex items-center gap-1"
+            className="text-black text-xs sm:text-sm font-medium"
           >
             TikTok
-            <ArrowRight className="w-4 h-4 -rotate-45" />
           </Link>
           <Link
             href="/politica-de-privacidade"
-            className="text-[#5BAD46]/80 text-sm font-medium flex items-center gap-1"
+            className="text-black text-xs sm:text-sm font-medium"
           >
             Privacidade
-            <ArrowRight className="w-4 h-4 -rotate-45" />
           </Link>
           <Link
             href="/termos-de-servico"
-            className="text-[#5BAD46]/80 text-sm font-medium flex items-center gap-1"
+            className="text-black text-xs sm:text-sm font-medium"
           >
             Termos
-            <ArrowRight className="w-4 h-4 -rotate-45" />
           </Link>
           <Link
             href="/seguranca-etiqueta"
-            className="text-[#5BAD46]/80 text-sm font-medium flex items-center gap-1"
+            className="text-black text-xs sm:text-sm font-medium"
           >
-            Segurança & Etiqueta
-            <ArrowRight className="w-4 h-4 -rotate-45" />
+            Segurança
           </Link>
           <Link
             href="/diretrizes-da-comunidade"
-            className="text-[#5BAD46]/80 text-sm font-medium flex items-center gap-1"
+            className="text-black text-xs sm:text-sm font-medium"
           >
             Diretrizes
-            <ArrowRight className="w-4 h-4 -rotate-45" />
           </Link>
         </div>
       </main>
