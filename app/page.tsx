@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Share2, Star } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, Share2, Star, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -11,6 +11,7 @@ export default function Home() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [shouldShowMore, setShouldShowMore] = useState(false);
   const [showCopied, setShowCopied] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const descriptionRef = useRef<HTMLParagraphElement | null>(null);
   const screenshotsRef = useRef<HTMLDivElement | null>(null);
   const reviewsRef = useRef<HTMLDivElement | null>(null);
@@ -18,12 +19,15 @@ export default function Home() {
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
   const [activeRef, setActiveRef] = useState<'screenshots' | 'reviews' | null>(null);
+  const hasDragged = useRef(false);
+  const lightboxTouchStart = useRef<number | null>(null);
 
   useEffect(() => {
     if (!isDragging) return;
 
     const handleMouseMove = (e: MouseEvent) => {
       e.preventDefault();
+      hasDragged.current = true;
       const container = activeRef === 'screenshots' ? screenshotsRef.current : reviewsRef.current;
       if (!container) return;
       const x = e.pageX;
@@ -52,6 +56,7 @@ export default function Home() {
 
   const handleMouseDown = (e: React.MouseEvent, ref: 'screenshots' | 'reviews') => {
     e.preventDefault();
+    hasDragged.current = false;
     const container = ref === 'screenshots' ? screenshotsRef.current : reviewsRef.current;
     if (!container) return;
     setIsDragging(true);
@@ -62,6 +67,56 @@ export default function Home() {
     container.style.scrollBehavior = 'auto';
     container.style.scrollSnapType = 'none';
   };
+
+  const handleScreenshotClick = (index: number) => {
+    if (!hasDragged.current) {
+      setLightboxIndex(index);
+    }
+  };
+
+  const handleLightboxPrev = () => {
+    setLightboxIndex((prev) => 
+      prev === null ? null : prev === 0 ? appData.screenshots.length - 1 : prev - 1
+    );
+  };
+
+  const handleLightboxNext = () => {
+    setLightboxIndex((prev) => 
+      prev === null ? null : prev === appData.screenshots.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const handleLightboxTouchStart = (e: React.TouchEvent) => {
+    lightboxTouchStart.current = e.touches[0].clientX;
+  };
+
+  const handleLightboxTouchEnd = (e: React.TouchEvent) => {
+    if (lightboxTouchStart.current === null) return;
+    const touchEnd = e.changedTouches[0].clientX;
+    const diff = lightboxTouchStart.current - touchEnd;
+    const threshold = 50;
+    
+    if (diff > threshold) {
+      handleLightboxNext();
+    } else if (diff < -threshold) {
+      handleLightboxPrev();
+    }
+    lightboxTouchStart.current = null;
+  };
+
+  // Keyboard navigation for lightbox
+  useEffect(() => {
+    if (lightboxIndex === null) return;
+    
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') handleLightboxPrev();
+      if (e.key === 'ArrowRight') handleLightboxNext();
+      if (e.key === 'Escape') setLightboxIndex(null);
+    };
+    
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [lightboxIndex]);
 
   const checkTextOverflow = () => {
     if (descriptionRef.current) {
@@ -144,7 +199,8 @@ export default function Home() {
             {appData.screenshots.map((screenshot, i) => (
               <div
                 key={i}
-                className="shrink-0 w-[240px] h-[520px] rounded-[32px] overflow-hidden border border-gray-100 relative bg-gray-100 snap-center"
+                className="shrink-0 w-[240px] h-[520px] rounded-[32px] overflow-hidden border border-gray-100 relative bg-gray-100 snap-center cursor-pointer hover:scale-[1.02] transition-transform"
+                onClick={() => handleScreenshotClick(i)}
               >
                 <Image
                   src={screenshot}
@@ -304,6 +360,69 @@ export default function Home() {
           </Link>
         </div>
       </main>
+
+      {/* Lightbox Modal */}
+      {lightboxIndex !== null && (
+        <div 
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+          onClick={() => setLightboxIndex(null)}
+        >
+          <button
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-10"
+            onClick={() => setLightboxIndex(null)}
+            aria-label="Fechar"
+          >
+            <X size={32} />
+          </button>
+          
+          {/* Previous Arrow */}
+          <button
+            className="absolute left-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors z-10 p-2"
+            onClick={(e) => { e.stopPropagation(); handleLightboxPrev(); }}
+            aria-label="Anterior"
+          >
+            <ChevronLeft size={40} />
+          </button>
+          
+          {/* Next Arrow */}
+          <button
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors z-10 p-2"
+            onClick={(e) => { e.stopPropagation(); handleLightboxNext(); }}
+            aria-label="Próximo"
+          >
+            <ChevronRight size={40} />
+          </button>
+          
+          <div 
+            className="relative max-h-[90vh] max-w-[90vw] w-auto h-auto touch-pan-y"
+            onClick={(e) => e.stopPropagation()}
+            onTouchStart={handleLightboxTouchStart}
+            onTouchEnd={handleLightboxTouchEnd}
+          >
+            <Image
+              src={appData.screenshots[lightboxIndex]}
+              alt={`Screenshot ${lightboxIndex + 1}`}
+              width={400}
+              height={867}
+              className="max-h-[90vh] w-auto h-auto object-contain rounded-[32px] select-none"
+              draggable={false}
+              priority
+            />
+          </div>
+          
+          {/* Dots Indicator */}
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+            {appData.screenshots.map((_, i) => (
+              <button
+                key={i}
+                className={`w-2 h-2 rounded-full transition-colors ${i === lightboxIndex ? 'bg-white' : 'bg-white/40'}`}
+                onClick={(e) => { e.stopPropagation(); setLightboxIndex(i); }}
+                aria-label={`Ir para screenshot ${i + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
