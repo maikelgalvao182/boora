@@ -8,10 +8,11 @@
     "overallRating": 5.0,
     "totalRatings": 6900,
     "buttonText": "Baixar Agora",
-    "liveAppLink": "https://apps.apple.com/br/app/boora/id6755944656"
+    "liveAppLink": "https://apps.apple.com/br/app/boora/id6755944656",
+    "playStoreLink": "https://play.google.com/store/apps/details?id=com.maikelgalvao.partiu&pcampaignid=web_share"
   },
-  "screenshots": ["/1.png", "/2.png", "/3.png", "/4.png", "/5.png", "/6.png"],
-  "description": "Boora é um social map pra quem cansou de ficar em casa sozinho esperando convite.\n\nAqui você cria suas próprias atividades no mapa. Pode ser correr no parque, tomar um café, jogar bola ou assistir aquele filme que tá bombando. Você publica e vê quem mais tá na mesma vibe.\n\nNada de match forçado. Tudo é espontâneo, real e perto de você.\n\nQuer sair e fazer algo? Joga no mapa.\nViu algo legal? Entra junto.\n\nBoora é pra quem quer explorar a cidade, fazer amizades reais e descobrir que tem muita gente legal por perto. Só faltava um jeito simples de se conectar.\n\nNão vá sozinho. Baixa aí e Boora.",
+  "screenshots": ["/1.png", "/2.png", "/3.png", "/4.png", "/5.png"],
+  "description": "<strong>Boora é um social map pra quem cansou de ficar em casa sozinho esperando convite.</strong>\n\nAqui você cria suas próprias atividades no mapa. Pode ser <strong>correr no parque, tomar um café, jogar bola ou assistir aquele filme que tá bombando.</strong> Você publica e vê quem mais tá na mesma vibe.\n\nNada de match forçado. Tudo é espontâneo, real e perto de você.\n\n<strong>Quer sair e fazer algo?</strong> Joga no mapa.\n<strong>Viu algo legal?</strong> Entra junto.\n\nBoora é pra quem quer explorar a cidade, fazer amizades reais e descobrir que tem muita gente legal por perto. Só faltava um jeito simples de se conectar.\n\n<strong>Não vá sozinho. Baixa aí e Boora.</strong>",
   "whatsNew": {
     "version": "1.0.0",
     "content": "Primeira versão do Boora! Crie atividades no mapa, encontre pessoas perto de você e faça novos amigos. Recursos incluem: criar e participar de atividades, chat em tempo real, notificações de atividades próximas e muito mais."

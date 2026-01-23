@@ -9,6 +9,7 @@ import { useTranslations } from "next-intl";
 
 import StarRating from "../components/StarRating";
 import DownloadButtons from "../components/DownloadButtons";
+import Header from "../components/Header";
 import type { Locale } from "../../i18n/routing";
 
 export type AppData = {
@@ -165,9 +166,10 @@ export default function HomeClient({
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-blue-100">
-      <main className="max-w-4xl mx-auto p-5 pt-10 pb-20">
+      <Header locale={locale} logoSrc="/logo.png" />
+      
+      <main className="max-w-4xl mx-auto p-5 pt-24 pb-20">
         <section className="flex flex-col items-center text-center mb-8">
-          <Image src={appData.app.icon} alt="App Icon" width={90} height={90} className="pb-6" />
           <h1 className="text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-4 md:max-w-lg mx-auto">
             {appData.app.name}
           </h1>
@@ -202,7 +204,10 @@ export default function HomeClient({
         <hr className="border-gray-200 mb-6" />
 
         <section className="mb-6">
-          <p className="text-sm leading-relaxed text-primary/80 whitespace-pre-line">{appData.description}</p>
+          <p 
+            className="text-sm leading-relaxed text-primary/80 whitespace-pre-line"
+            dangerouslySetInnerHTML={{ __html: appData.description }}
+          />
         </section>
 
         <hr className="border-gray-200 mb-6" />

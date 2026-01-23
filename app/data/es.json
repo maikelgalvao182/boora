@@ -8,10 +8,11 @@
     "overallRating": 5.0,
     "totalRatings": 6900,
     "buttonText": "Descargar ahora",
-    "liveAppLink": "https://apps.apple.com/br/app/boora/id6755944656"
+    "liveAppLink": "https://apps.apple.com/br/app/boora/id6755944656",
+    "playStoreLink": "https://play.google.com/store/apps/details?id=com.maikelgalvao.partiu&pcampaignid=web_share"
   },
-  "screenshots": ["/1.png", "/2.png", "/3.png", "/4.png", "/5.png", "/6.png"],
-  "description": "Boora es un mapa social para quienes están cansados de quedarse en casa solos esperando una invitación.\n\nAquí creas tus propias actividades en el mapa. Puede ser correr en el parque, tomar un café, jugar fútbol o ver esa película de la que todos hablan. Publicas y ves quién está en la misma vibra.\n\nNada de matches forzados. Todo es espontáneo, real y cerca de ti.\n\n¿Quieres salir y hacer algo? Ponlo en el mapa.\n¿Viste algo genial? Súmate.\n\nBoora es para quien quiere explorar la ciudad, hacer amistades reales y descubrir que hay mucha gente buena cerca — solo faltaba una forma simple de conectar.\n\nNo vayas solo. Descarga y Boora.",
+  "screenshots": ["/1.png", "/2.png", "/3.png", "/4.png", "/5.png"],
+  "description": "<strong>Boora es un mapa social para quienes están cansados de quedarse en casa solos esperando una invitación.</strong>\n\nAquí creas tus propias actividades en el mapa. Puede ser <strong>correr en el parque, tomar un café, jugar fútbol o ver esa película de la que todos hablan.</strong> Publicas y ves quién está en la misma vibra.\n\nNada de matches forzados. Todo es espontáneo, real y cerca de ti.\n\n<strong>¿Quieres salir y hacer algo?</strong> Ponlo en el mapa.\n<strong>¿Viste algo genial?</strong> Súmate.\n\nBoora es para quien quiere explorar la ciudad, hacer amistades reales y descubrir que hay mucha gente buena cerca — solo faltaba una forma simple de conectar.\n\n<strong>No vayas solo. Descarga y Boora.</strong>",
   "whatsNew": {
     "version": "1.0.0",
     "content": "¡Primera versión de Boora! Crea actividades en el mapa, encuentra personas cerca de ti y haz nuevos amigos. Incluye crear y unirse a actividades, chat en tiempo real, notificaciones de actividades cercanas y más."

@@ -31,7 +31,7 @@ export default function LocaleSwitcher({ currentLocale }: { currentLocale: Local
   return (
     <nav
       aria-label="Seletor de idioma"
-      className="fixed left-1/2 z-50 -translate-x-1/2 rounded-full border border-gray-200 bg-white/90 backdrop-blur px-2 py-1 shadow-sm bottom-6 sm:bottom-auto sm:top-4"
+      className="rounded-full border border-gray-200 bg-white/90 backdrop-blur px-2 py-1 shadow-sm"
     >
       <ul className="flex items-center gap-1">
         {locales.map((locale) => {
