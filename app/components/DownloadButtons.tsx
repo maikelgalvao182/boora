@@ -66,7 +66,7 @@ export default function DownloadButtons({ locale, appStoreUrl, playStoreUrl }: P
   if (items.length === 0) return null;
 
   return (
-    <div className="mt-4 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+    <div className="mt-4 flex flex-row flex-wrap items-center justify-center gap-3">
       {items.map((item) => (
         <a
           key={item.src}
@@ -79,7 +79,7 @@ export default function DownloadButtons({ locale, appStoreUrl, playStoreUrl }: P
             src={item.src}
             alt={item.alt}
             loading="eager"
-            className="block h-auto w-auto max-h-12 max-w-[180px]"
+            className="block h-auto w-auto max-h-12 max-w-[150px] sm:max-w-[180px]"
           />
         </a>
       ))}

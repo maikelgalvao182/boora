@@ -1,7 +1,6 @@
 {
   "app": {
-  "screenshots": ["/1.png", "/2.png", "/3.png", "/4.png", "/5.png"],
-  "description": "<strong>Boora is a social map for people tired of staying home alone waiting for an invite.</strong>\n\nHere you create your own activities on the map. It can be <strong>a run in the park, coffee, a game of soccer, or that movie everyone's talking about.</strong> You post it and see who's on the same vibe.\n\nNo forced matching. Everything is spontaneous, real, and close to you.\n\n<strong>Want to go out and do something?</strong> Drop it on the map.\n<strong>Saw something cool?</strong> Join in.\n\nBoora is for anyone who wants to explore the city, build real friendships, and discover there are lots of great people nearby — you just needed a simple way to connect.\n\n<strong>Don't go alone. Download and Boora.</strong>",  "icon": "/logo.png",
+    "icon": "/logo.png",
     "name": "No one to go out and explore the city with?",
     "ageRating": "9+",
     "developer": "Create activities on the map: run in the park, go to the movies, have a glass of wine. See who’s in and make new friends.",
@@ -13,7 +12,7 @@
     "playStoreLink": "https://play.google.com/store/apps/details?id=com.maikelgalvao.partiu&pcampaignid=web_share"
   },
   "screenshots": ["/1.png", "/2.png", "/3.png", "/4.png", "/5.png"],
-  "description": "Boora is a social map for people tired of staying home alone waiting for an invite.\n\nHere you create your own activities on the map. It can be a run in the park, coffee, a game of soccer, or that movie everyone’s talking about. You post it and see who’s on the same vibe.\n\nNo forced matching. Everything is spontaneous, real, and close to you.\n\nWant to go out and do something? Drop it on the map.\nSaw something cool? Join in.\n\nBoora is for anyone who wants to explore the city, build real friendships, and discover there are lots of great people nearby — you just needed a simple way to connect.\n\nDon’t go alone. Download and Boora.",
+  "description": "<strong>Boora is a social map for people tired of staying home alone waiting for an invite.</strong>\n\nHere you create your own activities on the map. It can be <strong>a run in the park, coffee, a game of soccer, or that movie everyone's talking about.</strong> You post it and see who's on the same vibe.\n\nNo forced matching. Everything is spontaneous, real, and close to you.\n\n<strong>Want to go out and do something?</strong> Drop it on the map.\n<strong>Saw something cool?</strong> Join in.\n\nBoora is for anyone who wants to explore the city, build real friendships, and discover there are lots of great people nearby — you just needed a simple way to connect.\n\n<strong>Don't go alone. Download and Boora.</strong>",
   "whatsNew": {
     "version": "1.0.0",
     "content": "First version of Boora! Create activities on the map, find people near you, and make new friends. Features include creating and joining activities, real-time chat, nearby activity notifications, and more."

@@ -54,6 +54,29 @@ export default function HomeClient({
   locale: Locale;
   appData: AppData;
 }) {
+  const highlightPhraseByLocale: Partial<Record<Locale, string>> = {
+    pt: "correr no parque, cinema, tomar vinho",
+    en: "run in the park, go to the movies, have a glass of wine",
+    es: "correr en el parque, cine, tomar vino",
+  };
+
+  const highlightPhrase = highlightPhraseByLocale[locale];
+  const developerText = appData.app.developer;
+
+  const renderDeveloper = () => {
+    if (!highlightPhrase) return developerText;
+    const index = developerText.indexOf(highlightPhrase);
+    if (index === -1) return developerText;
+
+    return (
+      <>
+        {developerText.slice(0, index)}
+        <span className="text-primary font-medium">{highlightPhrase}</span>
+        {developerText.slice(index + highlightPhrase.length)}
+      </>
+    );
+  };
+
   const tHome = useTranslations("Home");
   const tCommon = useTranslations("Common");
 
@@ -173,7 +196,7 @@ export default function HomeClient({
           <h1 className="text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-4 md:max-w-lg mx-auto">
             {appData.app.name}
           </h1>
-          <p className="text-base sm:text-lg text-primary/80 font-normal max-w-xl">{appData.app.developer}</p>
+          <p className="text-base sm:text-lg text-primary/80 font-normal max-w-xl">{renderDeveloper()}</p>
           <DownloadButtons
             locale={locale}
             appStoreUrl={appData.app.appStoreLink ?? appData.app.liveAppLink}
