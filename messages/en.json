@@ -1,0 +1,25 @@
+{
+  "Metadata": {
+    "title": "Boora - Don't go alone",
+    "description": "Boora is a social map for people tired of staying home alone waiting for an invite. Create activities on the map and see who’s on the same vibe."
+  },
+  "Common": {
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "safety": "Safety",
+    "guidelines": "Guidelines",
+    "backToApp": "Back",
+    "viewAll": "View all"
+  },
+  "Home": {
+    "reviewsTitle": "Ratings & Reviews",
+    "outOfFive": "out of 5",
+    "ratings": "Ratings",
+    "lightboxClose": "Close",
+    "previous": "Previous",
+    "next": "Next",
+    "goToScreenshot": "Go to screenshot {number}"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "Metadata": {
+    "title": "Boora - Não vá sozinho",
+    "description": "Boora é um social map pra quem cansou de ficar em casa sozinho esperando convite. Crie atividades no mapa e veja quem mais tá na mesma vibe."
+  },
+  "Common": {
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "safety": "Segurança",
+    "guidelines": "Diretrizes",
+    "backToApp": "Voltar",
+    "viewAll": "Ver tudo"
+  },
+  "Home": {
+    "reviewsTitle": "Avaliações e Comentários",
+    "outOfFive": "de 5",
+    "ratings": "Avaliações",
+    "lightboxClose": "Fechar",
+    "previous": "Anterior",
+    "next": "Próximo",
+    "goToScreenshot": "Ir para screenshot {number}"
+  }
+}

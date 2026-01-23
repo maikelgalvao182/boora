@@ -1,0 +1,96 @@
+{
+  "app": {
+    "icon": "/logo.png",
+    "name": "No one to go out and explore the city with?",
+    "ageRating": "9+",
+    "developer": "Create activities on the map: run in the park, go to the movies, have a glass of wine. See who’s in and make new friends.",
+    "priceType": "",
+    "overallRating": 5.0,
+    "totalRatings": 6900,
+    "buttonText": "Download Now",
+    "liveAppLink": "https://apps.apple.com/br/app/boora/id6755944656"
+  },
+  "screenshots": ["/1.png", "/2.png", "/3.png", "/4.png", "/5.png", "/6.png"],
+  "description": "Boora is a social map for people tired of staying home alone waiting for an invite.\n\nHere you create your own activities on the map. It can be a run in the park, coffee, a game of soccer, or that movie everyone’s talking about. You post it and see who’s on the same vibe.\n\nNo forced matching. Everything is spontaneous, real, and close to you.\n\nWant to go out and do something? Drop it on the map.\nSaw something cool? Join in.\n\nBoora is for anyone who wants to explore the city, build real friendships, and discover there are lots of great people nearby — you just needed a simple way to connect.\n\nDon’t go alone. Download and Boora.",
+  "whatsNew": {
+    "version": "1.0.0",
+    "content": "First version of Boora! Create activities on the map, find people near you, and make new friends. Features include creating and joining activities, real-time chat, nearby activity notifications, and more."
+  },
+  "ratings": {
+    "overall": 4.5,
+    "totalRatings": 6900,
+    "distribution": {
+      "5": 90,
+      "4": 15,
+      "3": 5,
+      "2": 0,
+      "1": 0
+    }
+  },
+  "reviews": [
+    {
+      "title": "Best app to make friends!",
+      "user": "CarlosSilva23",
+      "date": "12/10/2025",
+      "rating": 5,
+      "content": "I just moved to São Paulo and didn’t know anyone. With Boora I’ve already made several friends running at Ibirapuera. Highly recommend!"
+    },
+    {
+      "title": "Real meetups, no endless chatting",
+      "user": "JulianaMartins",
+      "date": "12/05/2025",
+      "rating": 5,
+      "content": "Tired of dating apps full of matches that go nowhere. Here it’s different—people actually want to go out and do things together. I’ve already gone to the movies, coffee, and hiking with amazing people!"
+    },
+    {
+      "title": "Simple and it works!",
+      "user": "PedroOliveira_",
+      "date": "12/12/2025",
+      "rating": 5,
+      "content": "The app is super easy to use. I posted that I wanted to play soccer and within 20 minutes people were confirming. We played and then grabbed a beer. So good!"
+    },
+    {
+      "title": "Perfect for getting to know the city",
+      "user": "AnaLuiza_RJ",
+      "date": "12/14/2025",
+      "rating": 5,
+      "content": "I moved to Rio 3 months ago and it was hard to make friends. Through Boora I met an awesome group to go to the beach and walk. Best app!"
+    },
+    {
+      "title": "Finally an app that works",
+      "user": "ThiagoMendes",
+      "date": "12/13/2025",
+      "rating": 5,
+      "content": "I tried a bunch of apps to make friends and this was the only one that really worked. I’ve joined several activities and met great people. Totally worth downloading!"
+    },
+    {
+      "title": "Great for breaking the routine",
+      "user": "BeatrizCosta",
+      "date": "12/11/2025",
+      "rating": 5,
+      "content": "I work from home and was going crazy staying inside. With Boora I started going out more—park yoga, exhibitions. It saved my routine!"
+    },
+    {
+      "title": "Real connections",
+      "user": "RafaelSantos92",
+      "date": "12/09/2025",
+      "rating": 5,
+      "content": "Unlike other apps where you just talk and nothing happens, here people actually meet up. I’ve made friendships I’ll keep for life!"
+    },
+    {
+      "title": "Amazing for people new in town",
+      "user": "CamilaRocha",
+      "date": "12/08/2025",
+      "rating": 5,
+      "content": "I moved from Recife to Belo Horizonte and didn’t know anyone. Through Boora I found a regular group to play volleyball every week. Highly recommend!"
+    },
+    {
+      "title": "Best discovery of the year",
+      "user": "LucasAlmeida_",
+      "date": "12/07/2025",
+      "rating": 5,
+      "content": "I downloaded without much expectation and was surprised. I’ve gone to bars, shows, hikes... Met awesome and diverse people. Such a great app!"
+    }
+  ],
+  "information": {}
+}
