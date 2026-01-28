@@ -55,9 +55,9 @@ export default function HomeClient({
   appData: AppData;
 }) {
   const highlightPhraseByLocale: Partial<Record<Locale, string>> = {
-    pt: "correr no parque, cinema, tomar vinho",
-    en: "run in the park, go to the movies, have a glass of wine",
-    es: "correr en el parque, cine, tomar vino",
+    pt: "querem sair, conversar e conhecer gente nova",
+    en: "want to go out, chat and meet new people",
+    es: "quieren salir, conversar y conocer gente nueva",
   };
 
   const highlightPhrase = highlightPhraseByLocale[locale];
