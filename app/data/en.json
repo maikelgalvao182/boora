@@ -1,9 +1,9 @@
 {
   "app": {
     "icon": "/logo.png",
-    "name": "Looking for company to go out today or on your next trip?",
+    "name": "Looking for company to go out today, tomorrow or while traveling?",
     "ageRating": "9+",
-    "developer": "Create or join events on the map: run in the park, have wine, dine out and meet people on your vibe.",
+    "developer": "Open the map and discover hangouts created by people who <strong style='color: black;'>want to go out, chat and meet new people</strong>.",
     "priceType": "",
     "overallRating": 5.0,
     "totalRatings": 6900,

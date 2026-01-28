@@ -1,9 +1,9 @@
 {
   "app": {
     "icon": "/logo.png",
-    "name": "Buscando companhia pra sair hoje ou na sua próxima viagem?",
+    "name": "Buscando companhia pra sair hoje, amanhã ou quando estiver viajando?",
     "ageRating": "9+",
-    "developer": "Crie ou entre em eventos no mapa: correr no parque, tomar vinho, jantar fora e conheça pessoas na mesma vibe que você.",
+    "developer": "Abra o mapa e descubra rolês criados por pessoas que <strong style='color: black;'>querem sair, conversar e conhecer gente nova</strong>.",
     "priceType": "",
     "overallRating": 5.0,
     "totalRatings": 6900,

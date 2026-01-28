@@ -1,9 +1,9 @@
 {
   "app": {
     "icon": "/logo.png",
-    "name": "¿Buscas compañía para salir hoy o en tu próximo viaje?",
+    "name": "¿Buscas compañía para salir hoy, mañana o cuando estés viajando?",
     "ageRating": "9+",
-    "developer": "Crea o únete a eventos en el mapa: correr en el parque, tomar vino, cenar fuera y conoce personas en tu misma vibra.",
+    "developer": "Abre el mapa y descubre planes creados por personas que <strong style='color: black;'>quieren salir, conversar y conocer gente nueva</strong>.",
     "priceType": "",
     "overallRating": 5.0,
     "totalRatings": 6900,
