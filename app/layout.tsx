@@ -33,29 +33,8 @@ export default async function RootLayout({
         <Script id="twitter-conversion-event" strategy="afterInteractive">
           {`
             twq('event', 'tw-r55je-r55pf', {
-              value: null,
-              currency: null,
-              contents: [
-                {
-                  content_type: null,
-                  content_id: null,
-                  content_name: null,
-                  content_price: null,
-                  num_items: null,
-                  content_group_id: null
-                },
-                {
-                  content_type: null,
-                  content_id: null,
-                  content_name: null,
-                  content_price: null,
-                  num_items: null,
-                  content_group_id: null
-                }
-              ],
-              conversion_id: null,
-              email_address: null,
-              phone_number: null
+              value: 0,
+              currency: 'BRL'
             });
           `}
         </Script>
