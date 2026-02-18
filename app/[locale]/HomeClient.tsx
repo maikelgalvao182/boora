@@ -313,6 +313,22 @@ export default function HomeClient({
           <Link href="https://tiktok.com/@boora.app" target="_blank" rel="noopener noreferrer" className="text-black text-xs sm:text-sm font-medium">
             {tCommon("tiktok")}
           </Link>
+          <Link
+            href="https://available-omelet-65d.notion.site/Ganhe-dinheiro-divulgando-o-Boora-30056e44b65c807f81e2e29aeef37760?source=copy_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black text-xs sm:text-sm font-medium"
+          >
+            UGC
+          </Link>
+          <Link
+            href="https://api.whatsapp.com/send/?phone=5511940498184&text=Ol%C3%A1%2C+preciso+de+ajuda+com+privacidade...&type=phone_number&app_absent=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black text-xs sm:text-sm font-medium"
+          >
+            {tCommon("support")}
+          </Link>
           <Link href={`/${locale}/politica-de-privacidade`} className="text-black text-xs sm:text-sm font-medium">
             {tCommon("privacy")}
           </Link>
